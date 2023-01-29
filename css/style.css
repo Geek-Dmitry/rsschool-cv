@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main {
+  margin: 100px 100px 100px 15px;
+  flex: 1 1 75%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.hidden {
+  display: none;
+}
+
+/*nav menu and buttons*/
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.active-btn {
+  padding: 10px 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: gray;
+  color: white;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all .3s ease-in-out;
+}
+
+.btn:not(:last-child) {
+  margin-right: 15px;
+}
+
+/*header*/
+
+.header {
+  flex: 1 1 15%;
+  margin: 100px 100px 100px 15px;
+  display: flex;
+  height: 100vh;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container-header {
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.header-title {
+  margin-bottom: 30px;
+  font-family: Mohave, sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: .7;
+  text-align: end;
+  text-transform: uppercase;
+}
+
+.header-title-surname {
+  font-size: 40px;
+}
+
+.header-description {
+  margin-top: 30px;
+  font-family: Mohave, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.header-navigation {
+  margin-top: 70px;
+  margin-right: 20px;
+  font-family: Mohave, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.header-navigation-list {
+  text-align: end;
+}
+
+/*section*/
+
+section {
+  margin-bottom: 80px;
+}
+
+.section-title {
+  margin-bottom: 30px;
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  list-style-type: disc;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.section-description {
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.section-description:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.title-profession {
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+/*section-profile*/
+
+.section-profile {
+  padding: 10px 100px 10px 40px;
+  border-left: solid  2px #000000;
+}
+
+/*section-skills*/
+
+.section-skills {
+  padding: 10px 100px 10px 40px;
+  border-left: solid  2px #000000;
+}
+
+.section-skills-list {
+  list-style-type: disc;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.section-skills-item:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+/*section-examples*/
+
+.section-examples {
+  padding: 10px 100px 10px 40px;
+  border-left: solid  2px #000000;
+}
+
+.subtitle-container {
+  display: flex;
+}
+
+.section-code-container {
+  padding: 30px;
+  margin-top: 20px;
+  background-color: lightgray;
+  border: solid 1px gray;
+  border-radius: 10px;
+}
+
+/*section-work-experience*/
+
+.section-work-experience {
+  padding: 10px 100px 10px 40px;
+  border-left: solid  2px #000000;
+}

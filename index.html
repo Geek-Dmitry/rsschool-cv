@@ -1,12 +1,188 @@
 <!DOCTYPE html>
+<!--suppress SpellCheckingInspection -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dzmitry Salata CV</title>
+  <title>Dzmitry  Salata CV</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mohave&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header class="header">
+    <div class="container container-header">
+      <h1 class="header-title">Dzmitry <br>
+        <span class="header-title-surname">Salata</span>
+      </h1>
+      <img class="header-img" src="assets/img/Photo.png" alt="Dzmitry photo">
+      <p class="header-description">date of birth: 23.08.1990</p>
+      <nav class="header-navigation">
+        <ul class="header-navigation-list">
+          <li class="header-navigation-item">Profile</li>
+          <li class="header-navigation-item">Skills</li>
+          <li class="header-navigation-item">Code examples</li>
+          <li class="header-navigation-item">Projects</li>
+          <li class="header-navigation-item">Work experience</li>
+          <li class="header-navigation-item">Contacts</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+<main>
+  <section class="section-title-profession">
+    <div class="container">
+      <h2 class="title-profession">C# developer</h2>
+    </div>
+  </section>
+
+  <section class="section-profile">
+    <div class="container">
+      <h3 class="section-title">Profile</h3>
+      <p class="section-description">
+        I want to acquire new skills and experience. Professional growth and learning are vital for me.
+        I want to change the area, and I have a strong desire for IT.
+      </p>
+      <p class="section-description">
+        I'm looking for an IT company in which I would like to gain my first commercial experience in development.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-skills">
+    <div class="container">
+      <h3 class="section-title">Skills</h3>
+      <ul class="section-skills-list">
+        <li class="section-skills-item">Knowledge of C#;</li>
+        <li class="section-skills-item">Knowledge of CSS, HTML, JS;</li>
+        <li class="section-skills-item">Knowledge of OOP principles and design patterns;</li>
+        <li class="section-skills-item">GIT knowledge;</li>
+        <li class="section-skills-item">English - A2. Able to read technical documentation and write a business
+          letter;</li>
+        <li class="section-skills-item">Can make a good cappuccino;</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-examples">
+    <div class="container">
+      <h3 class="section-title">Code examples</h3>
+      <div class="subtitle-container">
+        <h4 class="section-subtitle btn active-btn">C#</h4>
+        <h4 class="section-subtitle btn">HTML</h4>
+        <h4 class="section-subtitle btn">CSS</h4>
+        <h4 class="section-subtitle btn">JavaScript</h4>
+      </div>
+      <pre class="section-code-container">
+        <code class="section-code-text C#">
+public abstract class BaseRepository&#60;ModelType&#62;
+          : IBaseRepository&#60;ModelType&#62; where ModelType
+          : BaseModel
+
+  {
+    protected SpaceDbContext _spaceDbContext;
+    protected DbSet&#60;ModelType&#62; _dbSet;
+
+    public BaseRepository(SpaceDbContext spaceDbContext)
+      {
+        _spaceDbContext = spaceDbContext;
+        _dbSet = _spaceDbContext.Set&#60;ModelType&#62;();
+      }
+
+    public virtual List&#60;ModelType&#62; GetAll()
+      {
+        return _dbSet.ToList();
+      }
+        </code>
+        <code class="section-code-text HTML hidden">
+&#60;div class="header-lower"&#62;
+  &#60;nav class="header-lower-nav"&#62;
+    &#60;ul class="header-lower-nav-list"&#62;
+      &#60;li class="header-lower-nav-item"&#62;
+        &#60;a href="" class="header-lower-nav-link"&#62;О нас&#60;/a&#62;
+      &#60;/li&#62;
+      &#60;li class="header-lower-nav-item"&#62;
+        &#60;a href="" class="header-lower-nav-link"&#62;Услуги&#60;/a&#62;
+      &#60;/li&#62;
+      &#60;li class="header-lower-nav-item"&#62;
+        &#60;a href="" class="header-lower-nav-link"&#62;Преимущества&#60;/a&#62;
+      &#60;/li&#62;
+      &#60;li class="header-lower-nav-item"&#62;
+        &#60;a href="" class="header-lower-nav-link"&#62;Размещение&#60;/a&#62;
+      &#60;/li&#62;
+      &#60;li class="header-lower-nav-item"&#62;
+        &#60;a href="" class="header-lower-nav-link"&#62;Блог&#60;/a&#62;
+      &#60;/li&#62;
+      &#60;li class="header-lower-nav-item"&#62;
+        &#60;a href="" class="header-lower-nav-link"&#62;Контакты&#60;/a&#62;
+      &#60;/li&#62;
+    &#60;/ul&#62;
+  &#60;/nav&#62;
+        </code>
+        <code class="section-code-text CSS hidden">
+.header-lower {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 45px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+}
+
+.header-lower-nav-list {
+  display: flex;
+}
+
+.header-lower-nav-item {
+  word-break: break-word;
+}
+
+.header-lower-nav-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.header-lower-nav-link {
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+}
+        </code>
+        <code class="section-examples JS hidden">
+          $(document).ready(function () {
+    $(".spoiler__title").click(function(event) {
+
+        if ($(".spoiler").hasClass("one")) {
+            $(".spoiler__title").not($(this)).removeClass("active");
+            $(".spoiler__description").not($(this).next()).slideUp(200);
+        }
+
+        $(this).toggleClass("active").next(".spoiler__description").slideToggle(200);
+    });
+});
+        </code>
+      </pre>
+    </div>
+  </section>
+
+  <section class="section-projects">
+    <h3 class="section-title">Projects</h3>
+    <p class="section-text">On this moment I have only training projects and no experience in commercial development</p>
+    <h4 class="section-subtitle">Clother store HTML and JS version</h4>
+    <a class="section-projects-link">
+      <span class="icon-github">link on clother store project in github</span>
+    </a>
+  </section>
+
+  <section class="section-work-experience">
+    <h3 class="section-title">Work experience</h3>
+  </section>
+</main>
 </body>
 </html>

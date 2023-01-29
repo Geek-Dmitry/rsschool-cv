@@ -1,4 +1,4 @@
-![Alt-Dzmitry Salata photo](img/Photo.png)      
+![Alt-Dzmitry Salata photo](assets/img/Photo.png)      
 #DZMITRY SALATA                                 
 __С# DEVELOPER__                                
                                                 
